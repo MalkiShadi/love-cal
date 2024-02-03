@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ac1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F27C8F"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imglv"
+        android:layout_width="208dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/lo" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hhhh"
+        tools:layout_editor_absoluteY="-31dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C4100A"
+        android:ellipsize="none"
+        android:soundEffectsEnabled="true"
+        android:text="Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <TextView
+        android:id="@+id/txtcal"
+        android:layout_width="191dp"
+        android:layout_height="71dp"
+        android:fontFamily="@font/kaushan_script"
+        android:text="Calculator"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/rebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:soundEffectsEnabled="true"
+        android:text="Reset"
+        android:textColor="#C4100A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <EditText
+        android:id="@+id/db"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="DD"
+        android:inputType="number"
+        android:textColorHint="#423D3D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dg"
+        app:layout_constraintEnd_toStartOf="@+id/mb"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mb"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        android:textColorHint="#423D3D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mg"
+        app:layout_constraintEnd_toStartOf="@+id/yb" />
+
+    <EditText
+        android:id="@+id/yb"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="YYYY"
+        android:inputType="number"
+        android:textColorHint="#423D3D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/yg"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/dg"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="372dp"
+        android:ems="10"
+        android:hint="DD"
+        android:inputType="number"
+        android:textColorHint="#423D3D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mg"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="372dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        android:textColorHint="#423D3D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yg" />
+
+    <EditText
+        android:id="@+id/yg"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="372dp"
+        android:ems="10"
+        android:hint="YYYY"
+        android:inputType="number"
+        android:textColorHint="#423D3D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
